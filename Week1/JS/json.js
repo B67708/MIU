@@ -1,3 +1,8 @@
+//John Cardiff-Winchell
+//MIU 1304
+//Project 1
+
+
 var json = {
 	"Vehicle1": {
 		"newUsed" : ["New or Used:" , "New"],
