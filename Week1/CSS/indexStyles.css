@@ -1,0 +1,13 @@
+body{
+	background-color: #fff9c7;
+}
+
+#search{
+	width: 180px;
+	margin: 5px;
+	background-color: #ffffff;
+	
+}
+#searchButton{
+	width: 90px;
+}
