@@ -1,6 +1,6 @@
 // John Cardiff-Winchell
-// VFW 1303
-// Project 4
+// MIU 1304
+// Project 1
 
 // Wait until DOM is loaded
 window.addEventListener("DOMContentLoaded",function(){
