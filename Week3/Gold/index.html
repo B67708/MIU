@@ -31,7 +31,7 @@ Project 3 -->
 			<h1>Car Lot Inventory</h1>
 		</div>
 		<div data-role="content" data-inset="true">
-			<p><a href="addItem.html" data-ajax="false"> <img src="IMG/CallToAction.png"></a></p>
+			<p><a href="#addItem"> <img src="IMG/CallToAction.png"></a></p>
 			<h2>Browse Inventory</h2>
 			<div data-role="collapsible-set">
 				<div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="true">
@@ -42,7 +42,7 @@ Project 3 -->
 					</ul>
 				</div>
 				<div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="true">
-					<h3>Make (Thumbnail and text are in this category)</h3>
+					<h3>Make</h3>
 					<ul data-role="listview" data-filter="true" data-inset="true">
 						<li>
 							<a href="#comingSoon">
@@ -210,6 +210,72 @@ Project 3 -->
 		</div>
 	</div>
 
+	<div data-role="page" id="addItem">
+		<div data-role="header" data-position="fixed" >
+			<h1>Car Inventory Log</h1>
+		</div>
+		<div data-role="content">
+	<form action=""id="addItemForm">
+		<div data-role="field-contain">
+			<fieldset data-role="controlgroup" data-type="horizontal">
+        		<legend>Is the vehicle new or used?</legend>
+        		<input type="radio" name="newUsed" id="newUsedNew" value="on" checked="checked">
+        		<label for="newUsedNew">New</label>
+        		<input type="radio" name="newUsed" id="newUsedUsed" value="off">
+        		<label for="newUsedUsed">Used</label>
+        	</fieldset>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="makeMenu">Vehicle Make</label>
+    		<select name="makeMenu" id="makeMenu" data-native-menu="false" value="">
+        		<option value="">--- Select a make ---</option>
+        		<option value="Buick">Buick</option>
+        		<option value="Chevrolet">Chevrolet</option>
+        		<option value="Dodge">Dodge</option>
+        		<option value="Ford">Ford</option>
+        		<option value="Jeep">Jeep</option>
+        	</select>
+    	</div>
+    	<div data-role="fieldcontain">
+			<label for="modelMenu">Vehicle Model</label>
+    		<select name="modelMenu" id="modelMenu" data-native-menu="false" value="">
+        		<option value="">--- Select a model ---</option>
+        		<option value="Camero">Camero</option>
+        		<option value="Cobalt">Cobalt</option>
+        		<option value="Cruze">Cruze</option>
+        		<option value="Impala">Impala</option>
+        		<option value="Explorer">Explorer</option>
+        		<option value="F-150">F-150</option>
+        		<option value="Focus">Focus</option>
+        		<option value="Fusion">Fusion</option>
+        		<option value="Century">Century</option>
+        		<option value="Enclave">Enclave</option>
+        		<option value="Regal">Regal</option>
+        		<option value="Lacrosse">Lascrosse</option>
+        		<option value="Dart">Dart</option>
+        		<option value="Durango">Durango</option>
+        		<option value="Ram">Ram</option>
+        		<option value="Viper">Viper</option>
+        		<option value="Compass">Compass</option>
+        		<option value="Liberty">Liberty</option>
+        		<option value="Patriot">Patriot</option>
+        		<option value="Wrangler"><Wrangler/option>
+        	</select>
+    	</div>
+    	<label for="yearBox">Year:</label>
+     <input type="text" name="yearBox" id="yearBox" value="Input Year">    	
+    </form>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#mainPage" data-icon="home">Home</a></li>
+					<li><a href="#newsPage" data-icon="bars">News Stream</a></li>
+					<li><a href="#aboot" data-icon="info">About</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
