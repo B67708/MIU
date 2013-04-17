@@ -1,6 +1,6 @@
 //John Cardiff-Winchell
 //MIU 1304
-//Project 1
+//Project 2
 
 
 var json = {
