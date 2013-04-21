@@ -31,7 +31,7 @@ Project 3 -->
 			<h1>Car Lot Inventory</h1>
 		</div>
 		<div data-role="content" data-inset="true">
-			<p><a href="#addItem"> <img src="IMG/CallToAction.png"></a></p>
+			<p><a href="#addItem"> <img src="IMG/CallToAction.png" width="290px"></a></p>
 			<h2>Browse Inventory</h2>
 			<div data-role="collapsible-set">
 				<div data-role="collapsible" data-theme="b" data-content-theme="d" data-inset="true">
@@ -262,8 +262,23 @@ Project 3 -->
         		<option value="Wrangler"><Wrangler/option>
         	</select>
     	</div>
-    	<label for="yearBox">Year:</label>
-     <input type="text" name="yearBox" id="yearBox" value="Input Year">    	
+    	<label for="yearBox">Year</label>
+    		<input type="text" name="yearBox" id="yearBox" value="" placeholder="Input Year">
+    	<label for="mileBox">How many miles are on this vehicle?</label>
+    		<input type="text" name="mileBox" id="mileBox" value="" placeholder="Input Mileage">
+    	<label for="slider-fill">Vehicle Condition</label>
+    		<input type="range" name="slider-fill" id="slider-fill" value="5" min="1" max="5" data-highlight="true" />
+		<label for="mydate">Date vehicle added</label>
+			<input name="mydate" id="mydate" type="date" data-role="datebox" data-options="{"mode": "calbox"}" value="" placeholder="MM/DD/YYYY">
+		<label for="infoBox">Additional Information</label>
+    		<input type="text" name="infoBox" id="infoBox" value="" placeholder="Notes go here">
+    	<div data-role="fieldcontain"> 
+    		<input type="submit" id="submit" value="Submit" data-theme="b">
+	    </div>
+	    <div data-role="fieldcontain"> 
+    		<input type="reset" id="reset" value="Reset">
+	    </div>
+     
     </form>
 		</div>
 		<div data-role="footer" data-position="fixed">
