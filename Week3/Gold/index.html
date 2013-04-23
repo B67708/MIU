@@ -197,7 +197,7 @@ Project 3 -->
 			<h2>About me</h2>
 			<p>I am just a 27 year old full time college student, worker, father, and almost husband.</p>
 			<a href="https://github.com/B67708/MIU">Github Repo</a> <br>
-			<a href="http://b67708.github.io/MIU/Week2/Bronze/">Link to bronze app</a>
+			<a href="http://b67708.github.com/MIU/Week3/Bronze/">Link to bronze app</a>
 		</div>
 		<div data-role="footer" data-position="fixed">
 			<div data-role="navbar">
@@ -215,82 +215,85 @@ Project 3 -->
 			<h1>Car Inventory Log</h1>
 		</div>
 		<div data-role="content">
-	<form action=""id="addItemForm">
-		<div data-role="field-contain">
-			<fieldset data-role="controlgroup" data-type="horizontal">
-        		<legend>Is the vehicle new or used?</legend>
-        		<input type="radio" name="newUsed" id="newUsedNew" value="on" checked="checked">
-        		<label for="newUsedNew">New</label>
-        		<input type="radio" name="newUsed" id="newUsedUsed" value="off">
-        		<label for="newUsedUsed">Used</label>
-        	</fieldset>
-		</div>
-		<div data-role="fieldcontain">
-			<label for="makeMenu">Vehicle Make</label>
-    		<select name="makeMenu" id="makeMenu" data-native-menu="false" value="">
-        		<option value="">--- Select a make ---</option>
-        		<option value="Buick">Buick</option>
-        		<option value="Chevrolet">Chevrolet</option>
-        		<option value="Dodge">Dodge</option>
-        		<option value="Ford">Ford</option>
-        		<option value="Jeep">Jeep</option>
-        	</select>
-    	</div>
-    	<div data-role="fieldcontain">
-			<label for="modelMenu">Vehicle Model</label>
-    		<select name="modelMenu" id="modelMenu" data-native-menu="false" value="">
-        		<option value="">--- Select a model ---</option>
-        		<option value="Camero">Camero</option>
-        		<option value="Cobalt">Cobalt</option>
-        		<option value="Cruze">Cruze</option>
-        		<option value="Impala">Impala</option>
-        		<option value="Explorer">Explorer</option>
-        		<option value="F-150">F-150</option>
-        		<option value="Focus">Focus</option>
-        		<option value="Fusion">Fusion</option>
-        		<option value="Century">Century</option>
-        		<option value="Enclave">Enclave</option>
-        		<option value="Regal">Regal</option>
-        		<option value="Lacrosse">Lascrosse</option>
-        		<option value="Dart">Dart</option>
-        		<option value="Durango">Durango</option>
-        		<option value="Ram">Ram</option>
-        		<option value="Viper">Viper</option>
-        		<option value="Compass">Compass</option>
-        		<option value="Liberty">Liberty</option>
-        		<option value="Patriot">Patriot</option>
-        		<option value="Wrangler"><Wrangler/option>
-        	</select>
-    	</div>
-    	<label for="yearBox">Year</label>
-    		<input type="text" name="yearBox" id="yearBox" value="" placeholder="Input Year">
-    	<label for="mileBox">How many miles are on this vehicle?</label>
-    		<input type="text" name="mileBox" id="mileBox" value="" placeholder="Input Mileage">
-    	<label for="slider-fill">Vehicle Condition</label>
-    		<input type="range" name="slider-fill" id="slider-fill" value="5" min="1" max="5" data-highlight="true" />
-		<label for="mydate">Date vehicle added</label>
-			<input name="mydate" id="mydate" type="date" data-role="datebox" data-options="{"mode": "calbox"}" value="" placeholder="MM/DD/YYYY">
-		<label for="infoBox">Additional Information</label>
-    		<input type="text" name="infoBox" id="infoBox" value="" placeholder="Notes go here">
-    	<div data-role="fieldcontain"> 
-    		<input type="submit" id="submit" value="Submit" data-theme="b">
-	    </div>
-	    <div data-role="fieldcontain"> 
-    		<input type="reset" id="reset" value="Reset">
-	    </div>
-     
-    </form>
-		</div>
-		<div data-role="footer" data-position="fixed">
-			<div data-role="navbar">
-				<ul>
-					<li><a href="#mainPage" data-icon="home">Home</a></li>
-					<li><a href="#newsPage" data-icon="bars">News Stream</a></li>
-					<li><a href="#aboot" data-icon="info">About</a></li>
-				</ul>
+		<a href="#" id="clear">Clear Stored Data</a>
+		<a href="#" id="display">Display Stored Data</a>
+		<form action=""id="addItemForm">
+			<div data-role="fieldcontain">
+				<h4><span style="color:red">* is required field</span></h4>
+				<fieldset data-role="controlgroup" data-type="horizontal">
+	        		<legend>Is the vehicle new or used?</legend>
+	        		<input type="radio" name="newUsed" id="newUsedNew" value="on" checked="checked">
+	        		<label for="newUsedNew">New</label>
+	        		<input type="radio" name="newUsed" id="newUsedUsed" value="off">
+	        		<label for="newUsedUsed">Used</label>
+	        	</fieldset>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="makeMenu"><span style="color:red">*</span>Vehicle Make</label>
+	    		<select name="makeMenu" id="makeMenu" data-native-menu="false" value="">
+	        		<option value="">--- Select a make ---</option>
+	        		<option value="Buick">Buick</option>
+	        		<option value="Chevrolet">Chevrolet</option>
+	        		<option value="Dodge">Dodge</option>
+	        		<option value="Ford">Ford</option>
+	        		<option value="Jeep">Jeep</option>
+	        	</select>
+	    	</div>
+	    	<div data-role="fieldcontain">
+				<label for="modelMenu"><span style="color:red">*</span>Vehicle Model</label>
+	    		<select name="modelMenu" id="modelMenu" data-native-menu="false" value="">
+	        		<option value="">--- Select a model ---</option>
+	        		<option value="Camero">Camero</option>
+	        		<option value="Cobalt">Cobalt</option>
+	        		<option value="Cruze">Cruze</option>
+	        		<option value="Impala">Impala</option>
+	        		<option value="Explorer">Explorer</option>
+	        		<option value="F-150">F-150</option>
+	        		<option value="Focus">Focus</option>
+	        		<option value="Fusion">Fusion</option>
+	        		<option value="Century">Century</option>
+	        		<option value="Enclave">Enclave</option>
+	        		<option value="Regal">Regal</option>
+	        		<option value="Lacrosse">Lascrosse</option>
+	        		<option value="Dart">Dart</option>
+	        		<option value="Durango">Durango</option>
+	        		<option value="Ram">Ram</option>
+	        		<option value="Viper">Viper</option>
+	        		<option value="Compass">Compass</option>
+	        		<option value="Liberty">Liberty</option>
+	        		<option value="Patriot">Patriot</option>
+	        		<option value="Wrangler"><Wrangler/option>
+	        	</select>
+	    	</div>
+	    	<label for="yearBox"><span style="color:red">*</span>Year</label>
+	    		<input type="text" name="yearBox" id="yearBox" value="" placeholder="Input Year">
+	    	<label for="mileBox">How many miles are on this vehicle?</label>
+	    		<input type="text" name="mileBox" id="mileBox" value="" placeholder="Input Mileage">
+	    	<label for="slider-fill">Vehicle Condition</label>
+	    		<input type="range" name="slider-fill" id="slider-fill" value="5" min="1" max="5" data-highlight="true" />
+			<label for="mydate">Date vehicle added</label>
+				<input name="mydate" id="mydate" type="date" data-role="datebox" data-options="{"mode": "calbox"}" value="" placeholder="MM/DD/YYYY">
+			<label for="infoBox">Additional Information</label>
+	    		<input type="text" name="infoBox" id="infoBox" value="" placeholder="Notes go here">
+	    	<div data-role="fieldcontain"> 
+	    		<input type="submit" id="submit" value="Submit" data-theme="b">
+		    </div>
+		    <div data-role="fieldcontain"> 
+	    		<input type="reset" id="reset" value="Reset">
+		    </div>
+	     
+	    </form>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#mainPage" data-icon="home">Home</a></li>
+						<li><a href="#newsPage" data-icon="bars">News Stream</a></li>
+						<li><a href="#aboot" data-icon="info">About</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
