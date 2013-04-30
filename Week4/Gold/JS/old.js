@@ -1,6 +1,6 @@
 // John Cardiff-Winchell
 // MIU 1304
-// Project 3
+// Project 4
 
 // Wait until DOM is loaded
 window.addEventListener("DOMContentLoaded",function(){

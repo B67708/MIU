@@ -1,3 +1,6 @@
+//John Cardiff-Winchell
+//MIU 1304
+// Project 4
 $('#mainPage').on('pageinit', function(){
 	//code needed for home page goes here
 });	
