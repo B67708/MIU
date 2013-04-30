@@ -18,6 +18,7 @@ Project 4 -->
 	<meta http-equiv="cleartype" content="on">
 	
 	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="CSS/Week4.min.css"/>
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css"/>
 	<link rel="stylesheet" href="CSS/indexStyles.css"/>
 	
@@ -26,15 +27,16 @@ Project 4 -->
 
 </head>
 <body>
-	<div data-role="page" id="mainPage">
-		<div data-role="header" data-position="fixed" >
+	<div data-role="page" id="mainPage" data-theme="a">
+	<link rel="stylesheet" href="CSS/Week4.min.css"/>
+		<div data-role="header" data-position="fixed">
 			<h1>Car Lot Inventory</h1>
 		</div>
 		<div data-role="content" data-inset="true">
 			<p><a href="addItem.html" data-ajax="false"> <img src="IMG/CallToAction.png" width="290px"></a></p>
 			<h2>Browse Inventory</h2>
 			<div>
-				<ul data-role="listview" data-inset="true" data-theme="b" data-filter="true">									<li><a href="#newUsedPage">New or Used<span class="ui-li-count">2</span></a></li>
+				<ul data-role="listview" data-inset="true" data-theme="a" data-filter="true">									<li><a href="#newUsedPage">New or Used<span class="ui-li-count">2</span></a></li>
 					<li><a href="#makePage">Make (Thumbnail grid is in this category)<span class="ui-li-count">5</span></a></li>
 					<li><a href="#modelPage">Model<span class="ui-li-count">20</span></a></li>
 					<li><a href="#mileagePage">Mileage<span class="ui-li-count">9</span></a></li>
@@ -52,13 +54,13 @@ Project 4 -->
 			</div>
 		</div>
 	</div>
-	<div data-role="page" id="newUsedPage">
+	<div data-role="page" id="newUsedPage" data-theme="a">
 		<div data-role="header" data-position="fixed" >
 			<h1>New or Used</h1>
 		</div>
 		<div data-role="content">
 			<div>
-				<ul data-role="listview" data-inset="true" data-theme="b">
+				<ul data-role="listview" data-inset="true" data-theme="a">
 					<li><a href="#comingSoon">New</a></li>
 					<li><a href="#comingSoon">Used</a></li>
 				</ul>
@@ -74,7 +76,7 @@ Project 4 -->
 			</div>
 		</div>
 	</div>
-	<div data-role="page" id="makePage">
+	<div data-role="page" id="makePage" data-theme="a">
 		<div data-role="header" data-position="fixed" >
 			<h1>Make</h1>
 		</div>
@@ -138,13 +140,13 @@ Project 4 -->
 			</div>
 		</div>
 	</div>
-	<div data-role="page" id="modelPage">
+	<div data-role="page" id="modelPage" data-theme="a">
 		<div data-role="header" data-position="fixed">
 			<h1>Model</h1>
 		</div>
 		<div data-role="content">
 			<div>
-				<ul data-role="listview" data-inset="true" data-theme="b">
+				<ul data-role="listview" data-inset="true" data-theme="a">
 					<li><a href="#comingSoon">Camero</a></li>
 					<li><a href="#comingSoon">Cobalt</a></li>
 					<li><a href="#comingSoon">Cruze</a></li>
@@ -178,13 +180,13 @@ Project 4 -->
 			</div>
 		</div>
 	</div>
-	<div data-role="page" id="mileagePage">
+	<div data-role="page" id="mileagePage" data-theme="a">
 		<div data-role="header" data-position="fixed">
 			<h1>Mileage</h1>
 		</div>
 		<div data-role="content">
 			<div>
-				<ul data-role="listview" data-inset="true" data-theme="b">
+				<ul data-role="listview" data-inset="true" data-theme="a">
 					<li><a href="#comingSoon">0 - 25,000</a></li>
 					<li><a href="#comingSoon">25,001 - 50,000</a></li>
 					<li><a href="#comingSoon">50,001 - 75,000</a></li>
@@ -208,13 +210,13 @@ Project 4 -->
 			</div>
 		</div>
 	</div>
-	<div data-role="page" id="conditionPage">
+	<div data-role="page" id="conditionPage" data-theme="a">
 		<div data-role="header" data-position="fixed" >
 			<h1>Condition</h1>
 		</div>
 		<div data-role="content">
 			<div>
-				<ul data-role="listview" data-inset="true" data-theme="b">
+				<ul data-role="listview" data-inset="true" data-theme="a">
 					<li><a href="#comingSoon">1 Star</a></li>
 					<li><a href="#comingSoon">2 Star</a></li>
 					<li><a href="#comingSoon">3 Star</a></li>
@@ -233,7 +235,7 @@ Project 4 -->
 			</div>
 		</div>
 	</div>
-	<div data-role="page" id="comingSoon">
+	<div data-role="page" id="comingSoon" data-theme="a">
 		<div data-role="header" data-position="fixed" >
 			<h1>Coming Soon!!</h1>
 		</div>
@@ -251,7 +253,7 @@ Project 4 -->
 			</div>
 		</div>
 	</div>
-	<div data-role="page" id="newsPage">
+	<div data-role="page" id="newsPage" data-theme="a">
 		<div data-role="header" data-position="fixed" >
 			<h1>News Stream</h1>
 		</div>
@@ -277,7 +279,7 @@ Project 4 -->
 			</div>
 		</div>
 	</div>
-	<div data-role="page" id="aboot">
+	<div data-role="page" id="aboot" data-theme="a">
 		<div data-role="header" data-position="fixed" >
 			<h1>About</h1>
 		</div>
